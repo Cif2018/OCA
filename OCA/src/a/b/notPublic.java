@@ -1,12 +1,12 @@
 package a.b;
 
-import static java.lang.System.out;
+//import static java.lang.System.out;
 
 class notPublic {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-out.println("not public class");
+System.out.println("not public class");
 
 new notPublic();
 
@@ -32,7 +32,8 @@ new innerClass2();
 		
 		
 		public innerClass(){
-			out.println("from innerClass constructor!");
+			System.out.println("from innerClass constructor!");
+//			System.gc();
 		}
 	}
 
