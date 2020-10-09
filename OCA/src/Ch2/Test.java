@@ -27,9 +27,10 @@ public class Test {
 		out.println(Short.MIN_VALUE);
 		out.println(Short.MAX_VALUE);
 
-		int q = 2;
+		long q = 2;
 		int qq = 3;
-		q *= qq;
+//		q *= qq;
+		q=q*qq;
 		out.println(q);
 
 	}
