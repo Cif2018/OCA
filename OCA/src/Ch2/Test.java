@@ -2,21 +2,30 @@ package Ch2;
 
 import static java.lang.System.out;
 
-class Test2{
-	
+interface anInterface {
+
 }
 
-class Test3{
-	
+class Test2 implements anInterface {
+
+}
+
+class Test3 implements anInterface {
+
 }
 
 public class Test {
 
+	int t1;
+
+	public void aMethod() {
+		this.t1 = 1;
+	}
+
 	public static void main(String[] args) {
-		
-		Test2 t=new Test2();
+		Test2 t = new Test2();
 		out.println(t instanceof Test2);
-		
+
 //		String s = "ok";
 //		s += 2;
 //		s=s+2;
@@ -46,8 +55,8 @@ public class Test {
 //		y1=(int) (y1*x1);
 		out.println(y1);
 
-		long x2=3;
-		long y2=(x2=2)+1;
+		long x2 = 3;
+		long y2 = (x2 = 2) + 1;
 		out.println(x2);
 		out.println(y2);
 
