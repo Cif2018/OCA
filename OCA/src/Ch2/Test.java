@@ -2,9 +2,21 @@ package Ch2;
 
 import static java.lang.System.out;
 
+class Test2{
+	
+}
+
+class Test3{
+	
+}
+
 public class Test {
 
 	public static void main(String[] args) {
+		
+		Test2 t=new Test2();
+		out.println(t instanceof Test2);
+		
 //		String s = "ok";
 //		s += 2;
 //		s=s+2;
@@ -27,11 +39,17 @@ public class Test {
 		out.println(Short.MIN_VALUE);
 		out.println(Short.MAX_VALUE);
 
-		long q = 2;
-		int qq = 3;
-//		q *= qq;
-		q=q*qq;
-		out.println(q);
+		long x1 = 2;
+		int y1 = 3;
+		y1 *= x1;
+//		y1=(y1*x1);
+//		y1=(int) (y1*x1);
+		out.println(y1);
+
+		long x2=3;
+		long y2=(x2=2)+1;
+		out.println(x2);
+		out.println(y2);
 
 	}
 
