@@ -15,7 +15,7 @@ class Test3 implements anInterface {
 }
 
 public class Test {
-
+ 
 	int t1;
 
 	public void aMethod() {
@@ -25,6 +25,7 @@ public class Test {
 	public static void main(String[] args) {
 		Test2 t = new Test2();
 		out.println(t instanceof Test2);
+		out.println(t.getClass());
 
 //		String s = "ok";
 //		s += 2;
