@@ -7,7 +7,14 @@ import Ch2.Test;
 public class Test4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String s;
+		System.out.println(s=((1>2)?"T":"F"));
+		boolean b=false;
+if (b) 
+	System.out.println("TRUE");
+else 
+	System.out.println("FALSE");
+		
 		Test t = new Test();
 		System.out.println(t.toString());
 
