@@ -12,24 +12,38 @@ public class Test4 {
 
 	public static void main(String[] args) {
 		
+		int[][] list= {{1,2},{3},{4,5,6},{}};
+		System.out.println(list[3].length);
+
 		List<String> values = new ArrayList<String>();
-		
-		String[] AS1=new String[2]; //OBS: there is no compile err, two null values would return instead
-		for (String s:AS1) {
+
+		String[] AS1 = new String[2]; // OBS: there is no compile err, two null values would return instead
+		for (String s : AS1) {
 			System.out.println(s);
 		}
-		
-		String[] AS= {"x1","x2","x3"};
+
+		String[] AS = { "a", "b", "c" };
 //		String s; wrong!
-		for (String s:AS) {
-			System.out.println(s);
+		outer_loop: for (String s : AS) {
+			System.out.print(s);
+			inner_loop: for (int i = 0; i < 10; i++) {
+				if (i > 3) {
+					System.out.print("\n");
+//					continue inner_loop; //!
+//					break inner_loop;
+//					break outer_loop;
+					continue outer_loop;
+				}
+				System.out.print(i);
+			}
 		}
-				
+
 		int i;
 		int j;
 		for (i = 0, j = 0; i < 10; i++, j++) {
 			System.out.print(i);
 			System.out.println(j);
+
 		}
 
 //		for (int i = 0, j = 0; i < 10; i++, j++) {
